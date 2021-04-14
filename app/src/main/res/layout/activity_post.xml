@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyDark"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/head2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_close_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" />
+
+        <ImageButton
+            android:id="@+id/button_send_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/post_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Title "
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/post_browse"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/button_browse"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        android:textColorHighlight="@color/colorGreyDark" />
+
+    <EditText
+        android:id="@+id/post_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Description"
+        android:singleLine="false"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
