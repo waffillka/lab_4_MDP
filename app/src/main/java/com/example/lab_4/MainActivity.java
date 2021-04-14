@@ -26,7 +26,12 @@ import android.widget.Toast;
 import com.example.lab_4.Models.Post;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements FragmentList.OnAddButtonListener,
+        ActivityPost.OnButtonClickListener,
+        FragmentLogIn.onClickListener,
+        FragmentSignUp.onClickListener,
+        FragmentFullPost.OnButtonClickListener
+{
 
     private final int PERMISSION_REQUEST_CODE = 1;
     private final int CREATE_POST = 2;
